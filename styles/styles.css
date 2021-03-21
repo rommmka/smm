@@ -13,8 +13,15 @@ h1, h2, h3, h4, strong {
 	padding-left: 0 !important;
 }
 
-.services li.item .service {
+.services li.top-line {
+	display: block;
+	width: 50%;
+	border-bottom: 1px solid rgba(252,211,77,.9);
+}
+
+.services li.item .check-wrapper {
 	margin-top: 0 !important;	
+	align-self: normal;
 }
 
 .social-links a {
@@ -47,4 +54,53 @@ h1, h2, h3, h4, strong {
 
 .social-links .facebook:hover a::before {
 	background-image: url("../images/facebook-active.svg");
+}
+
+
+/*Checkboxes*/
+
+input[type=checkbox] + label {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 10px solid rgba(200, 200, 200, .8);
+  border-radius: 100%;
+  top: 25%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  transition: all ease-out 200ms;
+  text-indent: 115px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+input[type=checkbox] + label:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 25px;
+  border-bottom: 10px solid rgba(252,211,77,1);
+  border-left: 10px solid rgba(252,211,77,1);
+  top: 25%;
+  left: 50%;
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all ease-out 200ms;
+}
+
+input[type=checkbox]:checked + label {
+  border: 10px solid rgba(252,211,77,1);
+}
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+  width: 70px;
+}
+.check-wrapper {
+	position: relative;
+}
+.check-wrapper input {
+  display: none;
 }

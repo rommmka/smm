@@ -11,7 +11,7 @@
 		<div class="content xl:container mx-auto p-10 md:p-40">
 			<section class="heading md:flex-row flex-col flex justify-between mb-40">
 				<div class="main-info w-full md:w-7/12 prose prose-xl ">
-					<h1 class="title text-yellow-300 prose-yellow ">Anna Chupryna</h1>
+					<h1 class="title text-yellow-300 prose-yellow ">Анна Чуприна</h1>
 					<h3 class="subtitle text-gray-300"> ● SMM ● Просування ● </h3>
 					
 					<span class="description text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eos accusantium id maiores possimus nostrum ipsum quam laboriosam tempora, iusto ad harum. Dolor reprehenderit exercitationem, in nulla, cumque quisquam laboriosam.</span>
@@ -21,41 +21,88 @@
 				</div>
 			</section>
 			
-			<section class="constructor bg-gray-700 mx-auto  mb-40 p-10 rounded-xl prose-xl max-w-prose">
+			<section class="constructor mx-auto  mb-40 p-10 rounded-xl max-w-prose flex flex-col">
 				<h2 class="heading text-yellow-300">Обери собі послуги:</h2>
 				<ul class="checklist services" role="list">
 					<li class="item">
-						<label class="service"><input type="checkbox" name="service-content-plan" value="350" />Створення контент-плану на 12 публікацій</label><strong class="price w-2/6 text-right"> + 350 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox" id="service-content-plan" value="350" />
+							<label class="service" for="service-content-plan"></label>
+							<label class="pl-24" for="service-content-plan">Створення контент-плану на 12 публікацій</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 350 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-post" value="100" >Написання тексту посту</label><strong class="price w-2/6 text-right"> + 100 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-post" value="100" >
+							<label class="service" for="service-post"></label>
+							<label class="pl-24" for="service-post">Написання тексту посту</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 100 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-audit" value="450"  />Аудит профілю</label><strong class="price w-2/6 text-right"> + 450 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-audit" value="450"  />
+							<label class="service" for="service-audit"></label>
+							<label class="pl-24" for="service-audit">Аудит профілю</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 450 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-consult" value="200" />Подальша консультація після аудиту</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-consult" value="200" />
+							<label class="service" for="service-consult"></label>
+							<label class="pl-24" for="service-consult">Подальша консультація після аудиту</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-highlights" value="200"  />Створення дизайну та рубрик Highlights</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-highlights" value="200"  />
+							<label class="service" for="service-highlights"></label>
+							<label class="pl-24" for="service-highlights">Створення дизайну та рубрик Highlights</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-header" value="200"  />Створення шапки профілю яка продає</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-header" value="200"  />
+							<label class="service" for="service-header"></label>
+							<label class="pl-24" for="service-header">Створення шапки профілю яка продає</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-hashtags" value="100"  />Створення таблиць з хештегами</label><strong class="price w-2/6 text-right"> + 100 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-hashtags" value="100"  />
+							<label class="service" for="service-hashtags"></label>
+							<label class="pl-24" for="service-hashtags">Створення таблиць з хештегами</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 100 грн.</strong>
 					</li>
+					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-target" value="700"  />Таргет комплексно</label><strong class="price w-2/6 text-right"> + 700 грн.</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-target" value="700"  />
+							<label class="service" for="service-target"></label>
+							<label class="pl-24" for="service-target">Таргет комплексно</label>
+						</div>
+						<strong class="price w-1/5 text-right"> + 700 грн.</strong>
 					</li>
+					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
-						<label class="service" ><input type="checkbox"  name="service-full-monyh" value="3500"  />Повне ведення профілю</label><strong class="price w-2/6 text-right"> 3500 грн/міс</strong>
+						<div class="check-wrapper">
+							<input type="checkbox"  id="service-full-month" value="3500"  />
+							<label for="service-full-month" class="service" ></label>
+							<label class="pl-24" for="service-full-month">Повне ведення профілю</label>
+						</div>
+						<strong class="price w-1/5 text-right"> 3500 грн/міс</strong>
 					</li>
 				</ul>
 				<div class="total text-right">
 					<strong class="total-price text-5xl">2500 грн.</strong>
 				</div>
-				<button class="button order" >Замовити</button>
+				<button class="button order inline-block mx-auto px-8 py-4 bg-yellow-300 my-10 text-gray-700 rounded-lg uppercase font-bold" >Замовити</button>
 			</section>
 			<section class="achievements mb-40">
 				
