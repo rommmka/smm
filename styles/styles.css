@@ -1,0 +1,50 @@
+p, span, li, div {
+	color: #EEEEEE;
+}
+
+h1, h2, h3, h4, strong {
+	color: rgba(252,211,77,.9) !important;
+}
+
+.services li.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 0 !important;
+}
+
+.services li.item .service {
+	margin-top: 0 !important;	
+}
+
+.social-links a {
+	font-size: 0;
+}
+
+.social-links a::before {
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	background-position: center;
+	width: 128px;
+	height: 128px;	
+	transition: background-image .2s ease-in-out;
+}
+
+.social-links .instagram a::before {
+	background-image: url("../images/instagram-inactive.svg");
+}
+
+.social-links .facebook a::before {
+	background-image: url("../images/facebook-inactive.svg");
+	width: 123px;
+	height: 123px;	
+}
+
+.social-links .instagram:hover a::before {
+	background-image: url("../images/instagram-active.svg");
+}
+
+.social-links .facebook:hover a::before {
+	background-image: url("../images/facebook-active.svg");
+}

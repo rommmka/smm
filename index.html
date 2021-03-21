@@ -1,26 +1,72 @@
 <!doctype html>
 <html>
 	<head>
-	    <meta charset="UTF-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	    <link href="./styles/styles.css" rel="stylesheet">
-
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
+		<link href="./styles/styles.css" rel="stylesheet">
 	</head>
 	<body class="bg-gray-900">
-		<div class="content xl:container mx-auto">
-			<section class="heading">
-				<div class="main-info">
-					<h1 class="title text-yellow-300">Anna Chupryna</h1>
-					<h3 class="subtitle text-gray-300">SMM, просування</h3>
-					<span class="description text-gray-300">text</span>
+		<div class="content xl:container mx-auto p-10 md:p-40">
+			<section class="heading md:flex-row flex-col flex justify-between mb-40">
+				<div class="main-info w-full md:w-7/12 prose prose-xl ">
+					<h1 class="title text-yellow-300 prose-yellow ">Anna Chupryna</h1>
+					<h3 class="subtitle text-gray-300"> ● SMM ● Просування ● </h3>
+					
+					<span class="description text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eos accusantium id maiores possimus nostrum ipsum quam laboriosam tempora, iusto ad harum. Dolor reprehenderit exercitationem, in nulla, cumque quisquam laboriosam.</span>
 				</div>
-				<div class="madia"></div>
+				<div class="media w-full md:w-5/12 flex justify-end">
+					<div class="image bg-gray-200 rounded-full w-96 h-96"></div>
+				</div>
 			</section>
-			<section class="constructor bg-gray-700 mx-auto">2</section>
-			<section class="achievements">3</section>
-			<section class="contacts">4</section>
+			
+			<section class="constructor bg-gray-700 mx-auto  mb-40 p-10 rounded-xl prose-xl max-w-prose">
+				<h2 class="heading text-yellow-300">Обери собі послуги:</h2>
+				<ul class="checklist services" role="list">
+					<li class="item">
+						<label class="service"><input type="checkbox" name="service-content-plan" value="350" />Створення контент-плану на 12 публікацій</label><strong class="price w-2/6 text-right"> + 350 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-post" value="100" >Написання тексту посту</label><strong class="price w-2/6 text-right"> + 100 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-audit" value="450"  />Аудит профілю</label><strong class="price w-2/6 text-right"> + 450 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-consult" value="200" />Подальша консультація після аудиту</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-highlights" value="200"  />Створення дизайну та рубрик Highlights</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-header" value="200"  />Створення шапки профілю яка продає</label><strong class="price w-2/6 text-right"> + 200 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-hashtags" value="100"  />Створення таблиць з хештегами</label><strong class="price w-2/6 text-right"> + 100 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-target" value="700"  />Таргет комплексно</label><strong class="price w-2/6 text-right"> + 700 грн.</strong>
+					</li>
+					<li class="item">
+						<label class="service" ><input type="checkbox"  name="service-full-monyh" value="3500"  />Повне ведення профілю</label><strong class="price w-2/6 text-right"> 3500 грн/міс</strong>
+					</li>
+				</ul>
+				<div class="total text-right">
+					<strong class="total-price text-5xl">2500 грн.</strong>
+				</div>
+				<button class="button order" >Замовити</button>
+			</section>
+			<section class="achievements mb-40">
+				
+			</section>
+			
+			<section class="contacts flex justify-center mb-40">
+				<ul class="social-links flex justify-around">
+					<li class="instagram px-8"><a href="https://www.instagram.com/anna_chupryna/">Instagram</a></li>
+					<li class="facebook px-8"><a href="https://www.facebook.com/anna.chuprina.376">Facebook</a></li>
+				</ul>
+			</section>
 		</div>
-
 	</body>
-</html>	
+</html>
