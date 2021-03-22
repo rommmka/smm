@@ -1,16 +1,25 @@
 p, span, li, div {
 	color: #EEEEEE;
+	line-height: 36px;
+	font-size: 24px;
 }
 
 h1, h2, h3, h4, strong {
 	color: rgba(252,211,77,.9) !important;
 }
 
+h1, h2 {
+	margin-bottom: 2rem;
+}
+
+h3, h4 {
+	margin-bottom: 1.5rem;
+}
+
 .services li.item {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding-left: 0 !important;
+	/*margin-bottom: 25px;*/
 }
 
 .services li.top-line {
@@ -22,6 +31,11 @@ h1, h2, h3, h4, strong {
 .services li.item .check-wrapper {
 	margin-top: 0 !important;	
 	align-self: normal;
+}
+
+.services li.item .price {
+	/*font-weight: 800;
+	font-size: 30px;*/
 }
 
 .social-links a {
@@ -61,13 +75,12 @@ h1, h2, h3, h4, strong {
 
 input[type=checkbox] + label {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  border: 10px solid rgba(200, 200, 200, .8);
+  width: 50px;
+  height: 50px;
+  border: 8px solid rgba(200, 200, 200, .8);
   border-radius: 100%;
-  top: 25%;
-  left: 25px;
-  transform: translate(-50%, -50%);
+  /*top: -15%;*/
+  left: 0;
   transition: all ease-out 200ms;
   text-indent: 115px;
   white-space: nowrap;
@@ -80,9 +93,9 @@ input[type=checkbox] + label:after {
   content: "";
   position: absolute;
   width: 0px;
-  height: 25px;
-  border-bottom: 10px solid rgba(252,211,77,1);
-  border-left: 10px solid rgba(252,211,77,1);
+  height: 20px;
+  border-bottom: 8px solid rgba(252,211,77,1);
+  border-left: 8px solid rgba(252,211,77,1);
   top: 25%;
   left: 50%;
   transform-origin: bottom left;
@@ -104,3 +117,8 @@ input[type=checkbox]:checked + label:after {
 .check-wrapper input {
   display: none;
 }
+
+.real-label {
+	display: inline-block;
+}
+

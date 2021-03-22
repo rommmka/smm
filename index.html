@@ -4,111 +4,110 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
 		<link href="./styles/styles.css" rel="stylesheet">
 	</head>
 	<body class="bg-gray-900">
-		<div class="content xl:container mx-auto p-10 md:p-40">
+		<div class="content xl:container mx-auto p-4 md:p-10 md:p-40">
 			<section class="heading md:flex-row flex-col flex justify-between mb-40">
-				<div class="main-info w-full md:w-7/12 prose prose-xl ">
-					<h1 class="title text-yellow-300 prose-yellow ">Анна Чуприна</h1>
-					<h3 class="subtitle text-gray-300"> ● SMM ● Просування ● </h3>
+				<div class="main-info w-full md:w-7/12">
+					<h1 class="title text-yellow-300 text-7xl font-extrabold">Анна Чуприна</h1>
+					<h3 class="subtitle text-gray-300 text-2xl font-extrabold"> ● SMM ● Просування ● </h3>
 					
-					<span class="description text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eos accusantium id maiores possimus nostrum ipsum quam laboriosam tempora, iusto ad harum. Dolor reprehenderit exercitationem, in nulla, cumque quisquam laboriosam.</span>
+					<span class="description text-gray-300 leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eos accusantium id maiores possimus nostrum ipsum quam laboriosam tempora, iusto ad harum. Dolor reprehenderit exercitationem, in nulla, cumque quisquam laboriosam.</span>
 				</div>
 				<div class="media w-full md:w-5/12 flex justify-end">
 					<div class="image bg-gray-200 rounded-full w-96 h-96"></div>
 				</div>
 			</section>
 			
-			<section class="constructor mx-auto  mb-40 p-10 rounded-xl max-w-prose flex flex-col">
-				<h2 class="heading text-yellow-300">Обери собі послуги:</h2>
-				<ul class="checklist services" role="list">
+			<section class="constructor mx-auto mb-24 md:mb-40 lg:p-10 rounded-xl lg:w-auto flex flex-col">
+				<h2 class="heading text-yellow-300 text-4xl font-extrabold mb-24">Обери собі послуги:</h2>
+				<ul class="checklist services flex flex-col" role="list">
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox" id="service-content-plan" value="350" />
-							<label class="service" for="service-content-plan"></label>
-							<label class="pl-24" for="service-content-plan">Створення контент-плану на 12 публікацій</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-content-plan"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-content-plan">Створення контент-плану на 12 публікацій</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 350 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 350 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-post" value="100" >
-							<label class="service" for="service-post"></label>
-							<label class="pl-24" for="service-post">Написання тексту посту</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-post"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-post">Написання тексту посту</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 100 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 100 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-audit" value="450"  />
-							<label class="service" for="service-audit"></label>
-							<label class="pl-24" for="service-audit">Аудит профілю</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-audit"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-audit">Аудит профілю</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 450 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 450 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-consult" value="200" />
-							<label class="service" for="service-consult"></label>
-							<label class="pl-24" for="service-consult">Подальша консультація після аудиту</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-consult"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-consult">Подальша консультація після аудиту</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-highlights" value="200"  />
-							<label class="service" for="service-highlights"></label>
-							<label class="pl-24" for="service-highlights">Створення дизайну та рубрик Highlights</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-highlights"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-highlights">Створення дизайну та рубрик Highlights</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-header" value="200"  />
-							<label class="service" for="service-header"></label>
-							<label class="pl-24" for="service-header">Створення шапки профілю яка продає</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-header"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-header">Створення шапки профілю яка продає</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 200 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 200 грн.</strong>
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-hashtags" value="100"  />
-							<label class="service" for="service-hashtags"></label>
-							<label class="pl-24" for="service-hashtags">Створення таблиць з хештегами</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-hashtags"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-hashtags">Створення таблиць з хештегами</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 100 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 100 грн.</strong>
 					</li>
 					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-target" value="700"  />
-							<label class="service" for="service-target"></label>
-							<label class="pl-24" for="service-target">Таргет комплексно</label>
+							<label class="service scale-75 md:scale-100 transform -top-1" for="service-target"></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-target">Таргет комплексно</label>
 						</div>
-						<strong class="price w-1/5 text-right"> + 700 грн.</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> + 700 грн.</strong>
 					</li>
 					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
 						<div class="check-wrapper">
 							<input type="checkbox"  id="service-full-month" value="3500"  />
-							<label for="service-full-month" class="service" ></label>
-							<label class="pl-24" for="service-full-month">Повне ведення профілю</label>
+							<label for="service-full-month" class="service scale-75 md:scale-100 transform -top-1" ></label>
+							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-full-month">Повне ведення профілю</label>
 						</div>
-						<strong class="price w-1/5 text-right"> 3500 грн/міс</strong>
+						<strong class="price text-lg md:text-3xl w-1/5 text-right"> 3500 грн/міс</strong>
 					</li>
 				</ul>
 				<div class="total text-right">
-					<strong class="total-price text-5xl">2500 грн.</strong>
+					<strong class="total-price text-7xl">2500 грн.</strong>
 				</div>
 				<button class="button order inline-block mx-auto px-8 py-4 bg-yellow-300 my-10 text-gray-700 rounded-lg uppercase font-bold" >Замовити</button>
 			</section>
-			<section class="achievements mb-40">
+			<section class="achievements mb-24 md:mb-40">
 				
 			</section>
 			
-			<section class="contacts flex justify-center mb-40">
+			<section class="contacts flex justify-center mb-24 md:mb-40">
 				<ul class="social-links flex justify-around">
 					<li class="instagram px-8"><a href="https://www.instagram.com/anna_chupryna/">Instagram</a></li>
 					<li class="facebook px-8"><a href="https://www.facebook.com/anna.chuprina.376">Facebook</a></li>
