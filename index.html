@@ -22,10 +22,10 @@
 			
 			<section class="constructor mx-auto mb-24 md:mb-40 lg:p-10 rounded-xl lg:w-auto flex flex-col">
 				<h2 class="heading text-yellow-300 text-4xl font-extrabold mb-24">Обери собі послуги:</h2>
-				<ul class="checklist services flex flex-col" role="list">
+				<ul class="checklist services flex flex-col mb-20 border-b-2 border-yellow-300 pb-20" role="list">
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox" id="service-content-plan" value="350" />
+							<input type="checkbox" name="service-checkbox" id="service-content-plan" value="350" />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-content-plan"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-content-plan">Створення контент-плану на 12 публікацій</label>
 						</div>
@@ -33,7 +33,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-post" value="100" >
+							<input type="checkbox" name="service-checkbox"  id="service-post" value="100" >
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-post"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-post">Написання тексту посту</label>
 						</div>
@@ -41,7 +41,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-audit" value="450"  />
+							<input type="checkbox" name="service-checkbox"  id="service-audit" value="450"  />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-audit"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-audit">Аудит профілю</label>
 						</div>
@@ -49,7 +49,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-consult" value="200" />
+							<input type="checkbox" name="service-checkbox"  id="service-consult" value="200" />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-consult"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-consult">Подальша консультація після аудиту</label>
 						</div>
@@ -57,7 +57,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-highlights" value="200"  />
+							<input type="checkbox" name="service-checkbox"  id="service-highlights" value="200"  />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-highlights"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-highlights">Створення дизайну та рубрик Highlights</label>
 						</div>
@@ -65,7 +65,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-header" value="200"  />
+							<input type="checkbox" name="service-checkbox"  id="service-header" value="200"  />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-header"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-header">Створення шапки профілю яка продає</label>
 						</div>
@@ -73,7 +73,7 @@
 					</li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-hashtags" value="100"  />
+							<input type="checkbox" name="service-checkbox"  id="service-hashtags" value="100"  />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-hashtags"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-hashtags">Створення таблиць з хештегами</label>
 						</div>
@@ -82,7 +82,7 @@
 					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-target" value="700"  />
+							<input type="checkbox" name="service-checkbox"  id="service-target" value="700"  />
 							<label class="service scale-75 md:scale-100 transform -top-1" for="service-target"></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-target">Таргет комплексно</label>
 						</div>
@@ -91,7 +91,7 @@
 					<li class="top-line mx-auto my-10"></li>
 					<li class="item">
 						<div class="check-wrapper">
-							<input type="checkbox"  id="service-full-month" value="3500"  />
+							<input type="checkbox" name="service-checkbox"  id="service-full-month" value="3500"  />
 							<label for="service-full-month" class="service scale-75 md:scale-100 transform -top-1" ></label>
 							<label class="pl-14 md:pl-24 real-label text-xl md:text-3xl mb-5 md:mb-8" for="service-full-month">Повне ведення профілю</label>
 						</div>
@@ -99,9 +99,9 @@
 					</li>
 				</ul>
 				<div class="total text-right">
-					<strong class="total-price text-7xl">2500 грн.</strong>
+					<strong class="total-price text-7xl" id="total-price">0 грн.</strong>
 				</div>
-				<button class="button order inline-block mx-auto px-8 py-4 bg-yellow-300 my-10 text-gray-700 rounded-lg uppercase font-bold" >Замовити</button>
+				<button class="button order transition duration-300 ease-in-out inline-block mx-auto px-8 py-4 bg-yellow-300 hover:bg-yellow-400 my-10 text-gray-700 rounded-lg uppercase font-bold" >Замовити</button>
 			</section>
 			<section class="achievements mb-24 md:mb-40">
 				
@@ -109,10 +109,32 @@
 			
 			<section class="contacts flex justify-center mb-24 md:mb-40">
 				<ul class="social-links flex justify-around">
-					<li class="instagram px-8"><a href="https://www.instagram.com/anna_chupryna/">Instagram</a></li>
-					<li class="facebook px-8"><a href="https://www.facebook.com/anna.chuprina.376">Facebook</a></li>
+					<li class="instagram transition duration-500 ease-in-out px-8"><a href="https://www.instagram.com/anna_chupryna/">Instagram</a></li>
+					<li class="facebook transition duration-500 ease-in-out px-8"><a href="https://www.facebook.com/anna.chuprina.376">Facebook</a></li>
 				</ul>
 			</section>
 		</div>
+
+		<script type="text/javascript">
+			function totalCount() {
+				var total = 0;
+				document.getElementById('total-price').innerHTML = '0 грн.'
+
+				document.getElementsByName('service-checkbox').forEach(function (el){
+
+					el.onclick = function() { totalCount(); }
+
+					if (!el.checked) return;
+
+					total += parseInt(el.value);
+					
+					document.getElementById('total-price').innerHTML = total + ' грн.'
+
+				});
+			}
+
+			totalCount();	
+
+		</script>
 	</body>
 </html>
