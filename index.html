@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		<link href="./styles/styles.css" rel="stylesheet">
 	</head>
 	<body class="bg-gray-900">
@@ -15,13 +17,13 @@
 					
 					<span class="description text-gray-300 leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eos accusantium id maiores possimus nostrum ipsum quam laboriosam tempora, iusto ad harum. Dolor reprehenderit exercitationem, in nulla, cumque quisquam laboriosam.</span>
 				</div>
-				<div class="media w-full md:w-5/12 flex justify-end rellax" data-rellax-speed="-1" data-rellax-zindex="-5">
+				<div class="media w-full md:w-5/12 flex justify-end rellax-not-centered" data-rellax-speed="-3" data-rellax-zindex="-5">
 					<div class="image bg-gray-200 rounded-full w-96 h-96"></div>
 				</div>
 			</section>
 			
-			<section class="constructor mx-auto mb-24 md:mb-40 lg:p-10 rounded-xl lg:w-auto flex flex-col ">
-				<h2 class="heading text-yellow-300 text-4xl font-extrabold mb-24 z-0 rellax" data-rellax-speed="1">Обери собі послуги:</h2>
+			<section class="constructor mx-auto mb-24 md:mb-40 lg:p-10 rounded-xl lg:w-auto flex flex-col " data-aos="zoom-out-up">
+				<h2 class="heading text-yellow-300 text-4xl font-extrabold mb-24 z-0 rellax" data-rellax-speed="0.3">Обери собі послуги:</h2>
 				<ul class="checklist services flex flex-col mb-20 border-b-2 border-yellow-300 pb-20" role="list">
 					<li class="item">
 						<div class="check-wrapper">
@@ -110,7 +112,7 @@
 			</section>
 			
 			<section class="contacts flex justify-center">
-				<ul class="social-links flex justify-around">
+				<ul class="social-links flex justify-around" data-aos="fade-up">
 					<li class="instagram transition duration-500 ease-in-out px-8 rellax" data-rellax-speed="-0.5"><a href="https://www.instagram.com/anna_chupryna/">Instagram</a></li>
 					<li class="facebook transition duration-500 ease-in-out px-8 rellax" data-rellax-speed="-0.5"><a href="https://www.facebook.com/anna.chuprina.376">Facebook</a></li>
 				</ul>
@@ -119,7 +121,11 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 		<script type="text/javascript">
+			AOS.init(); 
+
 			function totalCount() {
 				var total = 0;
 				document.getElementById('total-price').innerHTML = '0 грн.'
@@ -132,8 +138,13 @@
 			}
 			totalCount();	
 
+
 			var rellax = new Rellax('.rellax', {
 		      center:true
+		    });
+
+		    var rellax2 = new Rellax('.rellax-not-centered', {
+		      center:false
 		    });
 
 		</script>
